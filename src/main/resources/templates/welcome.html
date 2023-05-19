@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>FODMAP calculator</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${name}"></span>!</h1>
+<form action="goToMeal" method="POST">
+  <button type="submit">Go to meal calculator</button>
+</form>
+<!--
+<form action="seeMeals" method="POST">
+  <button type="submit">See the meals you logged</button>
+</form>
+-->
+<form action="seeIngredients" method="POST">
+    <button type="submit">See all ingredients in our database</button>
+</form>
+</body>
+</html>
